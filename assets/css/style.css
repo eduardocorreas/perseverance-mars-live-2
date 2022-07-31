@@ -2,6 +2,30 @@
   padding: 0;
   margin: 0;
 }
+
+*:focus {
+  border: 2px solid red;
+}
+
+.skip-to-content-link {
+  background: red;
+  height: 30px;
+  left: 50%;
+  position: absolute;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+  color: white !important;
+  font-weight: bold !important;
+}
+
+.skip-to-content-link:focus {
+  transform: translateY(0%);
+}
+
+.nav-link {
+  color: white !important;
+}
+
 .header {
   background: linear-gradient(
       to bottom,
@@ -13,7 +37,8 @@
   background-size: cover;
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .header-content {
@@ -59,10 +84,10 @@ ul {
 }
 
 .social-list li a i {
-  font-size: 20px;
+  font-size: 25px;
   color: rgb(68, 68, 68) !important;
 }
 
 .social-list li {
-  margin-right: 15px;
+  margin-right: 25px;
 }

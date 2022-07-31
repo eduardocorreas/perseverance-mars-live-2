@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mars Perseverance</title>
 
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css?202231011624" />
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
 
     <link
@@ -18,43 +18,83 @@
     />
   </head>
   <body>
+    <a href="#header-content" class="skip-to-content-link">Pular menu</a>
+
     <div class="header">
       <div class="container">
-        <div class="d-flex justify-content-between">
-          <div class="header-content">
-            <div class="d-flex flex-column mb-5">
-              <img src="./assets/img/logo.png" class="logo" />
-              <span class="title"
-                >Acompanhe ao vivo cada passo do perseverance em solo
-                marciano!</span
-              >
-              <span class="subtitle"
-                >Cada passo dado rumo ao espaço nos trouxe até aqui e
-                <b>
-                  agora você pode colocar os seus próprios pés no planeta
-                  vermelho!</b
-                ></span
-              >
-              <a href="#" class="btn btn-danger btn-sm"
-                ><i class="fa-brands fa-youtube"></i>QUERO ASSISTIR AO VIVO</a
-              >
-            </div>
-            <ul class="list-group list-group-horizontal social-list">
-              <li>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <nav class="navbar navbar-expand-lg navbar-light mb-5">
+          <a class="navbar-brand" href="#"
+            ><img src="./assets/img/nasa-logo.png" width="100"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Home <span class="sr-only">(current)</span></a
+                >
               </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Próximas viagens</a>
               </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Newsletter</a>
               </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
               </li>
             </ul>
           </div>
+        </nav>
+      </div>
+
+      <div class="container">
+        <div class="header-content" id="header-content">
+          <div class="d-flex flex-column mb-5">
+            <a href="#"><img src="./assets/img/logo.png" class="logo" /></a>
+            <span class="title"
+              >Acompanhe ao vivo cada passo do perseverance em solo
+              marciano!</span
+            >
+            <span class="subtitle"
+              >Cada passo dado rumo ao espaço nos trouxe até aqui e
+              <b>
+                agora você pode colocar os seus próprios pés no planeta
+                vermelho!</b
+              ></span
+            >
+            <a href="#" class="btn btn-danger btn-sm"
+              ><i class="fa-brands fa-youtube"></i>QUERO ASSISTIR AO VIVO</a
+            >
+          </div>
         </div>
+      </div>
+      <div class="container">
+        <ul class="list-group list-group-horizontal social-list">
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </li>
+        </ul>
       </div>
     </div>
     <script src="./assets/js/bootstrap.min.js"></script>
